@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>改变元素内容</title>
+</head>
+<body>
+    <h1>我的第一段 JavaScript</h1>
+
+    <p id="demo">
+        JavaScript 能改变 HTML 元素的内容。
+    </p>
+
+<script>
+    function myFunction() {
+        x = document.getElementById("demo");  //找到元素
+        x.innerHTML = "Hello JavaScript!"     //改变内容
+
+        //写入输出流
+        document.write(Date());
+
+        //弹出警告框
+        window.alert(5 + 6);
+
+        //写到控制台
+        console.log("写到控制台语句");
+
+    }
+
+</script>
+
+<button type="button" onclick="myFunction()">点击这里</button>
+</body>
+</html>

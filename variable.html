@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+//  var person = new Object();  //引用类型值
+//    person.name = 'xhh';
+//    alert(person.name);     //可以向对象添加属性
+
+//    var name = "xhh";     //基本类型值
+//    name.age = 27;
+//    alert(name.age);  //undefined
+
+    function setName(obj){    //函数参数都是按值传递
+        obj.name = "xhh";
+        obj = new Object();
+        obj.name = "xhh2"
+    }
+
+    var person = new Object();
+
+    var name = "xiannv";
+    setName(person);
+    //alert(person.name);     //xhh
+   // alert(person instanceof Object);
+//    alert(person instanceof Array);
+  //  alert(person instanceof RegExp);  //检测对象的类型是否是正则表达式。instanceof  只能检测引用类型值
+
+    for(var i=0;i<10;i++){
+    }
+
+    alert(i);
+</script>
+</body>
+</html>
