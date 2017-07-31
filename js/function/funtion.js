@@ -1,8 +1,10 @@
 /**
  * Created by xuhuanhuan on 2017/7/28.
  */
-
-function Foo(name,age) {
+// var Foo = function () {
+//    //函数表达式
+// }
+function Foo(name,age) {     //函数声明
     this.name = name;
     this.age = age;
     this.class='class-1';

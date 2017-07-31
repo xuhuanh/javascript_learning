@@ -27,3 +27,11 @@ delete xiaoming.age;      //删除某一属性
 'toString' in xiaoming;   //ture   继承到的
 
 xiaoming.hasOwnProperty('toString');  //fasle
+
+var key ;
+for(key in xiaoming){
+    //筛选出此对象自身的属性，而不是从原型链中继承而来
+    if(xiaoming.hasOwnProperty(key)){
+        console.log(key,xiaoming[key]);
+    }
+}
